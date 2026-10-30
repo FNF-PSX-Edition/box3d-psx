@@ -23,6 +23,7 @@
 		<compilerflag value="/wd4061" if="isMsvc" />
 		<compilerflag value="/wd4711" if="isMsvc" />
 		<compilerflag value="/wd4710" if="isMsvc" />
+		<compilerflag value="/wd4756" if="isMsvc" />
 		<depend files="box3d-depends" />
 
 		<compilerflag value="-DBOX3D_DISABLE_SIMD" if="HXCPP_M32 linux" /> <!-- Disable unsupported instruction set in 32 bit -->
@@ -99,5 +100,4 @@
 	<files id="__main__">
 		<compilerflag value="-I${LINC_BOX3D_PATH}/linc/" />
 	</files>
-	
 </xml>
